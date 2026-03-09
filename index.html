@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Midnight Corner Cafe</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0b132b;
+color:white;
+}
+
+/* HEADER */
+
+header{
+background:#050a18;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:40px;
+letter-spacing:2px;
+color:#ffd166;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:60vh;
+background-image:url("cafe.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+.hero-text{
+position:relative;
+z-index:2;
+}
+
+.hero-text h2{
+font-size:42px;
+font-family:'Playfair Display',serif;
+}
+
+.hero-text p{
+opacity:.8;
+}
+
+/* MENU */
+
+.menu{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.menu h3{
+text-align:center;
+font-size:30px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.menu-item{
+background:#111c44;
+border-radius:12px;
+overflow:hidden;
+transition:.3s;
+}
+
+.menu-item:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px rgba(255,200,120,0.4);
+}
+
+.menu-item img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.menu-content{
+padding:15px;
+}
+
+.menu-content h4{
+margin:0;
+font-size:18px;
+}
+
+.menu-content p{
+font-size:14px;
+opacity:.75;
+margin-top:6px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#050a18;
+margin-top:40px;
+opacity:.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Midnight Corner Cafe</h1>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h2>Warm Coffee. Quiet Nights.</h2>
+<p>A place for thinkers, dreamers, and night wanderers.</p>
+</div>
+</section>
+
+<section class="menu">
+
+<h3>Our Menu</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<img src="espresso.jpg">
+<div class="menu-content">
+<h4>Espresso</h4>
+<p>Rich and bold single shot coffee — ₹120</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="cappuccino.jpg">
+<div class="menu-content">
+<h4>Cappuccino</h4>
+<p>Espresso with creamy milk foam — ₹180</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="latte.jpg">
+<div class="menu-content">
+<h4>Cafe Latte</h4>
+<p>Smooth espresso with steamed milk — ₹200</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="coldbrew.jpg">
+<div class="menu-content">
+<h4>Cold Brew</h4>
+<p>Slow-brewed chilled coffee — ₹220</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="croissant.jpg">
+<div class="menu-content">
+<h4>Croissant</h4>
+<p>Buttery flaky French pastry — ₹150</p>
+</div>
+</div>
+
+<div class="menu-item">
+<img src="muffin.jpg">
+<div class="menu-content">
+<h4>Chocolate Muffin</h4>
+<p>Soft baked chocolate delight — ₹140</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Midnight Corner Cafe</p>
+</footer>
+
+</body>
+</html>
